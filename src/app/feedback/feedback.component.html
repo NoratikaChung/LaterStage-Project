@@ -1,0 +1,15 @@
+<form class="formContainer">
+    <h3 class="text-center"></h3>
+        <div class="form-group">
+            <label>Name : </label>
+            <input type="text" placeholder="Enter name" class="form-control" [(ngModel)]="username" name="username"/>
+            <p>Name: {{username}}</p>
+        </div>
+
+        <div class="form-group">
+            <label>Feedback: </label>
+            <textarea [ngModelOptions]="{standalone:true}" placeholder="Enter text here" rows="4" cols="30" maxlength="1000" class="form-control" [(ngModel)]="feedback"></textarea>
+            <p>Total characters entered: {{feedback.length}}/1000</p>
+            <button type="submit" [ngClass]="{' btn btn-primary': username.length > 0 && feedback.length > 0, 'btn btn-secondary': username.length == 0 && feedback.length == 0, 'btn': true}" [disabled]="username.length==0 && feedback.length ==0">Submit</button>
+        </div>
+</form>

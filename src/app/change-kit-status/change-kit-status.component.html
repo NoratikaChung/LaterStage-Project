@@ -1,0 +1,18 @@
+<div class="change-kit-status">
+    <h1>CHANGE KIT STATUS</h1>
+    <div class="form-group">
+      <label for="site">Site</label>
+      <select id="site" [(ngModel)]="selectedSite">
+        <option *ngFor="let site of sites" [value]="site">{{ site.name }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kitStepId">Kit Step ID</label>
+      <input id="kitStepId" type="text" [(ngModel)]="kitStepId" />
+    </div>
+    <div class="button-group">
+      <button (click)="submit()" class="submit-btn">Submit</button>
+      <button (click)="reset()" class="reset-btn">Reset</button>
+    </div>
+  </div>
+  

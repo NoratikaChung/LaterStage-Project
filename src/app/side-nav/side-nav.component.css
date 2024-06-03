@@ -1,0 +1,28 @@
+/* Side navigation styling */
+.side-nav {
+    background-color: #f8f9fa;
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Button styling within side navigation */
+  .side-nav button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .side-nav button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,26 @@
+<div class="recover-mat-qty">
+    <h1>RECOVER MATERIAL QUANTITY</h1>
+    <div class="form-group">
+      <label for="site">Site</label>
+      <select id="site" [(ngModel)]="selectedSite">
+        <option *ngFor="let site of sites" [value]="site">{{ site.name }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kitStepId">Kit Step ID</label>
+      <input id="kitStepId" type="text" [(ngModel)]="kitStepId" />
+    </div>
+    <div class="form-group">
+      <label for="materialSerialNumber">Material Serial Number</label>
+      <input id="materialSerialNumber" type="text" [(ngModel)]="materialSerialNumber" />
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input id="quantity" type="number" [(ngModel)]="quantity" />
+    </div>
+    <div class="button-group">
+      <button (click)="submit()" class="submit-btn">Submit</button>
+      <button (click)="reset()" class="reset-btn">Reset</button>
+    </div>
+  </div>
+  

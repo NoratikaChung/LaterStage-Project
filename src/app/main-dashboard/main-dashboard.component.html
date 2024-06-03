@@ -1,0 +1,35 @@
+<div *ngIf="selectedSite">
+    <h2>{{ selectedSite.name }}</h2>
+    <div *ngFor="let line of selectedSite.lines">
+      <button (click)="toggleLine(line)">
+        {{ line.name }}
+      </button>
+      <div *ngIf="line.isOpen">
+        <table>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let tool of line.tools">
+              <td>{{ tool }}</td>
+              <td>
+                <span [class.online]="toolStatus[tool]" [class.offline]="!toolStatus[tool]">
+                  {{ toolStatus[tool] ? 'Online' : 'Offline' }}
+                </span>
+              </td>
+              <td class="actions">
+                <button (click)="startTool(tool)">Start</button>
+                <button (click)="stopTool(tool)">Stop</button>
+                <button (click)="restartTool(tool)">Restart</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

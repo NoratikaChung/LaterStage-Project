@@ -1,0 +1,15 @@
+<!-- <div class="side-nav">
+    <button *ngFor="let site of sites" (click)="selectSite(site)">
+      {{ site.name }}
+    </button>
+  </div> -->
+  
+  <div class="side-nav">
+    <button routerLink="/dashboard">Dashboard</button>
+    <button *ngFor="let site of sites" (click)="selectSite(site)">
+        {{ site.name }}
+      </button>
+    <button routerLink="/recover-mat-qty">RecoverMatQty</button>
+    <button routerLink="/change-kit-status">ChangeKitStatus</button>
+  </div>
+  

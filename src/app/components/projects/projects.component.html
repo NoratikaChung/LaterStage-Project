@@ -1,0 +1,15 @@
+<!-- <h2>{{channel.title}}</h2>
+<p>{{channel.description}}</p>
+<img class="logo" [src]="channel.logoSrc">
+<button class="btn btn-primary" (click)="onSubscribeClick(channel)">{{isSubscribed ? "Unsubscribe" : "Subscribe"}}</button> -->
+
+<div class="dropdown">
+    <button (click)="toggleDropdown()" class="dropdown-button">
+      Toggle Dropdown
+    </button>
+    <div *ngIf="isOpen" class="dropdown-content">
+      <p>This is some hidden information.</p>
+      <p>You can place more content here.</p>
+    </div>
+  </div>
+  

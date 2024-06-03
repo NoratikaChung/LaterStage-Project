@@ -1,0 +1,75 @@
+/* src/app/app.component.css */
+.container {
+    display: flex;
+  }
+  
+  app-side-nav {
+    width: 200px;
+  }
+  
+  app-main-dashboard {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* src/app/side-nav/side-nav.component.css */
+  .side-nav {
+    background-color: #f8f9fa;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  .side-nav button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .side-nav button:hover {
+    background-color: #e2e6ea;
+  }
+  
+  /* src/app/main-dashboard/main-dashboard.component.css */
+  h2 {
+    margin-top: 0;
+  }
+  
+  button {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e2e6ea;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* break before the added components */
+
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
