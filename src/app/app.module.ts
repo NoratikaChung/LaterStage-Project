@@ -65,6 +65,7 @@ import { MainDashboardComponent } from './main-dashboard/main-dashboard.componen
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { RecoverMatQtyComponent } from './recover-mat-qty/recover-mat-qty.component';
 import { ChangeKitStatusComponent } from './change-kit-status/change-kit-status.component';
+import { SitesComponent } from './sites/sites.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { ChangeKitStatusComponent } from './change-kit-status/change-kit-status.
     MainDashboardComponent,
     LandingPageComponent,
     RecoverMatQtyComponent,
-    ChangeKitStatusComponent
+    ChangeKitStatusComponent,
+    SitesComponent
   ],
   imports: [
     BrowserModule,

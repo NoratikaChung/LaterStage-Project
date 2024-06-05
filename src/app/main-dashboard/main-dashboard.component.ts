@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
 export class MainDashboardComponent {
   @Input() selectedSite: any;
   toolStatus: { [key: string]: boolean } = {};
-
   toggleLine(line: any): void {
     line.isOpen = !line.isOpen;
   }

@@ -62,3 +62,27 @@ h2 {
     color: red;
   }
   
+  .start-button {
+    background-color: green;
+    border-radius: 50px;
+    text-align: center;
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  .stop-button {
+    background-color: red;
+    border-radius: 50px;
+    text-align: center;
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  .restart-button {
+    background-color: yellow;
+    border-radius: 50px;
+    text-align: center;
+    width: 100px;
+    margin-left: 20px;
+    border-color: orange;
+  }

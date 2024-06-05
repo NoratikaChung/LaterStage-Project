@@ -7,9 +7,13 @@
   </div> -->
   
   <div class="container">
-    <app-side-nav></app-side-nav>
+    <app-side-nav (siteSelected)="onSiteSelected($event)"></app-side-nav>
     <div class="main-content">
       <router-outlet></router-outlet>
     </div>
   </div>
-  
+
+  <div class="container">
+    <app-side-nav (siteSelected)="onSiteSelected($event)"></app-side-nav>
+    <app-main-dashboard [selectedSite]="selectedSite"></app-main-dashboard>
+  </div>

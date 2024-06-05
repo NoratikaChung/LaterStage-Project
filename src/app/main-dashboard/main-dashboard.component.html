@@ -2,7 +2,7 @@
     <h2>{{ selectedSite.name }}</h2>
     <div *ngFor="let line of selectedSite.lines">
       <button (click)="toggleLine(line)">
-        {{ line.name }}
+        {{ line.lineNum }}
       </button>
       <div *ngIf="line.isOpen">
         <table>
@@ -22,9 +22,9 @@
                 </span>
               </td>
               <td class="actions">
-                <button (click)="startTool(tool)">Start</button>
-                <button (click)="stopTool(tool)">Stop</button>
-                <button (click)="restartTool(tool)">Restart</button>
+                <button class="start-button" (click)="startTool(tool)">Start</button>
+                <button class="stop-button" (click)="stopTool(tool)">Stop</button>
+                <button class="restart-button" (click)="restartTool(tool)">Restart</button>
               </td>
             </tr>
           </tbody>

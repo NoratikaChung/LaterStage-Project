@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'dashboard', component: LandingPageComponent },
   { path: 'recover-mat-qty', component: RecoverMatQtyComponent },
   { path: 'change-kit-status', component: ChangeKitStatusComponent },
+  { path: 'main-dashboard', component: MainDashboardComponent}
 ];
 
 @NgModule({
