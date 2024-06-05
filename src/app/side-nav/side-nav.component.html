@@ -6,10 +6,12 @@
   
   <div class="side-nav">
     <button routerLink="/dashboard">Dashboard</button>
-    <button routerLink="/main-dashboard" *ngFor="let site of sites" (click)="selectSite(site)">
-        {{ site.name }}
-      </button>
+    <button *ngFor="let site of sites" [routerLink]="['/main-dashboard', site.name]">
+      {{ site.name }}
+    </button>
     <button routerLink="/recover-mat-qty">RecoverMatQty</button>
     <button routerLink="/change-kit-status">ChangeKitStatus</button>
   </div>
+  
+  
   

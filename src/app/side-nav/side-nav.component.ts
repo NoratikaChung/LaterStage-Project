@@ -15,10 +15,12 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {
     this.siteDataService.getSitesData().subscribe(data => {
       this.sites = data.sites;
+      console.log('Loaded sites:', this.sites);  // Log the loaded sites
     });
   }
 
   selectSite(site: any): void {
+    console.log('Selected site:', site);  // Log the selected site
     this.siteSelected.emit(site);
   }
 }
